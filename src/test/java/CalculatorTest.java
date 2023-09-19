@@ -1,24 +1,26 @@
+import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class CalculatorTest {
     double a = 10;
     double b = 11.98;
 
-    @org.junit.jupiter.api.Test
+    @Test
     void plusCalc() {
         double expectedResult = a + b;
         double actualResult = Calculator.plusCalc(a, b);
         assertEquals(expectedResult, actualResult, 0.0001);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void minusCalc() {
         double expectedResult = a - b;
         double actualResult = Calculator.minusCalc(a, b);
         assertEquals(expectedResult, actualResult, 0.0001);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void divideCalc() {
         double expectedResult = a / b;
         double actualResult = Calculator.divideCalc(a, b);
@@ -32,7 +34,7 @@ class CalculatorTest {
 
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void multiplyCalc() {
         double expectedResult = a * b;
         double actualResult = Calculator.multiplyCalc(a, b);
